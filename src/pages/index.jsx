@@ -1,0 +1,5 @@
+export {default as Dashboard} from './Dashboard'
+export {default as Shipping} from './Shipping'
+export {default as Tracking} from './Tracking'
+export {default as Clients} from './Clients'
+export {default as Settings} from './Settings'

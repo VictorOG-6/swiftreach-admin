@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;   
+  background-color: #d3d3d3;
+  padding: 0.5em 1em;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h3{
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+}
+
+h5{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #000000;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#grid-comp .e-gridheader{
+  border-radius: 1.5rem;  
+}
+
+#grid-comp .e-gridheader .e-headercontent{
+  margin-right: -16px;  
+}
+
+#grid-comp .e-headercell{
+  background: #d3d3d3;
+} 
+
+#grid-comp .e-gridcontent{
+  padding-top: 0.5rem;
+}
+
+.e-grid .e-content::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.e-grid .e-content::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.e-grid .e-content::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar color */
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #f1f1f1; /* Creates space around the scrollbar */
+}
+
+.e-grid .e-content::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color when hovered */
+}
+
+/* Style for Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Make scrollbar thinner */
+  scrollbar-color: #888 #f1f1f1; /* Scrollbar color and background */
+}
+
+/* General style to ensure it works on all platforms */
+.custom-scrollbar {
+  overflow-y: scroll;
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+  height: 6px; /* Height of the slider */
+  border-radius: 3px;
+  background: #e0e0e0; /* Default background */
+  position: relative;
+  cursor: default; /* No pointer cursor since it's static */
+}
+
+.slider-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;  
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.start-circle {
+  left: 0;
+}
+
+.end-circle {
+  background: #80FFBA;
+  right: 0;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar color */
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #f1f1f1; /* Creates space around the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color when hovered */
+}
+
+.custom-scrollbar::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  background: none; /* Ensure no background */
+  display: none; /* Just in case, ensure they don't appear */
+}
+
+/* Style for Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Make scrollbar thinner */
+  scrollbar-color: #888 #f1f1f1; /* Scrollbar color and background */
+}
+
+/* General style to ensure it works on all platforms */
+.custom-scrollbar {
+  overflow-y: scroll;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #000000;
+    background-color: #ffffff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
